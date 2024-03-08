@@ -1,0 +1,50 @@
+1) 
+Resposta: Será 91. O código vai resultar em uma P.A da soma dos números de 1 a 13. 
+
+2) 
+Resposta:
+def verificar_fibonacci(numero):
+    x, y = 0, 1
+    while y < numero:
+        x, y = y, x + y
+
+    if y == numero:
+        return True
+    else:
+        return False
+num = int(input("Digite um número para ver se pertence a sequência de Fibonacci: "))
+
+if verificar_fibonacci(num):
+    print(f"{num} é um número da sequência de Fibonacci!")
+else:
+    print(f"{num} não é um número da sequência de Fibonacci!")
+
+3)
+Resposta:
+a) 1, 3, 5, 7, *9* (sequência lógica segue apenas números ímpares.)
+
+b) 2, 4, 8, 16, 32, 64, *128* (sequência lógica vai dobrando/multiplicando por 2 o número anterior)
+
+c) 0, 1, 4, 9, 16, 25, 36, *49* (a sequência é de números elevados ao quadrado, do 1 em diante...)
+
+d) 4, 16, 36, 64, *100* (mesma lógica da anterior mas apenas o quadrado dos números pares)
+
+e) 1, 1, 2, 3, 5, 8, *13* (usar a sequência de fibonacci)
+
+f) 2,10, 12, 16, 17, 18, 19, *200* (números que começam com D... essa foi de sacanagem, fiquei um tempão quebrando a cabeça nisso kkkk)
+
+4) 
+Resposta:
+Eu ligaria o interruptor 1 e deixaria uns minutos até esquentar uma lâmpada, aí desligaria ele e ligaria o interruptor 2 em seguida, e ia pra uma das salas.
+Se tiver ligada, o interruptor 2 é o certo. Se tiver desligada mas quente, é o 1. Do contrário, é o 3.
+Aí na sequência é só ligar mais um interruptor e gastar a última ida a uma das salas, restando só duas opções seria lógico qual é qual. 
+
+5) 
+Resposta:
+def inv_tex(texto):
+    return texto[::-1]
+texto = input("Digite um texto: ")
+inverter = inv_tex(texto)
+
+print("Texto original:", texto)
+print("Texto invertido:", inverter)
